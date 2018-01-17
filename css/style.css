@@ -1,0 +1,207 @@
+body {
+  background-color: #BABABA;
+  text-align: left;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3 {
+  margin: 0px;
+  color: #CD9C4E; /* light orange */
+}
+
+p {
+  line-height: 1.2em;
+  word-spacing: 1.5px;
+}
+
+.button {
+  background-color:#333;
+  color:#fff;
+  padding:10px 15px;
+  border: 2px solid #CD9C4E;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #CD9C4E;
+}
+
+.intro-div {
+  margin:10px;
+  padding: 20px;
+  background: #764B7D; /* dark purple */
+  width: 95%;
+  border: 5px solid #CD9C4E;
+  border-radius: 15px;
+  box-sizing:border-box;
+}
+
+.intro-div p {
+  font-size: 18px;
+}
+
+.about-div {
+  background: #255B5E; /* dark blueish */
+  padding: 15px;
+  width: 95%;
+  border: 5px solid #CD9C4E;
+  border-radius: 12px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.about-div h2 {
+  color: #ffffff;
+}
+
+.about-div p {
+  font-size: 16px;
+}
+
+.navbar { /*NOTE: I'll be using bootstrap to make the navbar move with the page. its much easier that way */
+  font-size: 18px;
+  color: #E48113;
+  background: #333333;
+  padding: 10px 15px;
+  word-spacing: 20px;
+  top: 0px; /* starts at top of screen */
+  width: 95%;
+  margin: 0px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navbar a:hover {
+  color: red;
+}
+
+.projects-div {
+  margin: 10px;
+}
+
+.project-div {
+  float:left;
+  width: 32%;
+  border: 3px solid #CD9C4E;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 15px;
+  background: #333333; /* default background */
+  box-sizing: border-box;
+  color: black;
+}
+
+.project-div:hover {
+  border:3px solid red;
+}
+
+.project-div:hover h3 {
+  color: red;
+}
+
+.projects-div div:nth-child(1){ /* customizes the first project's background */
+  background-image: url("../images/p1Image.jpg");
+}
+
+.projects-div div:nth-child(2){ /* customizes the second project's background */
+  background-image: url("../images/p2Image.jpg");
+}
+
+.projects-div div:nth-child(3){ /* customizes the third project's background */
+  background-image: url("../images/p3Image.jpg");
+}
+
+.projects-div div:nth-child(4){ /* customizes the first project's background */
+  background-image: url("../images/p4Image.jpg");
+}
+
+.projects-div div:nth-child(5){ /* customizes the second project's background */
+  background-image: url("../images/p5Image.jpg");
+}
+
+.projects-div div:nth-child(6){ /* customizes the third project's background */
+  background-image: url("../images/p6Image.jpg");
+}
+
+.projects-div div:nth-child(7){ /* customizes the first project's background */
+  background-image: url("../images/p1Image.jpg");
+}
+
+.projects-div div:nth-child(8){ /* customizes the second project's background */
+  background-image: url("../images/p2Image.jpg");
+}
+
+.projects-div div:nth-child(9){ /* customizes the third project's background */
+  background-image: url("../images/p3Image.jpg");
+}
+
+.projects-div div:nth-child(10){ /* customizes the first project's background */
+  background-image: url("../images/p4Image.jpg");
+}
+
+.projects-div div:nth-child(11){ /* customizes the second project's background */
+  background-image: url("../images/p5Image.jpg");
+}
+
+.projects-div div:nth-child(12){ /* customizes the third project's background */
+  background-image: url("../images/p6Image.jpg");
+}
+
+.clear {
+  clear:both;
+}
+
+.comment-form {
+  padding: 20px 15px;
+  background: #764B7D; /* dark purple */
+  border: 3px solid #CD9C4E;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.comment-form h2 {
+  color: #ffffff;
+  margin-bottom: 10px; /* gives the bottom element more spacing */
+}
+
+.comment-form p {
+  margin: 0px;
+}
+
+.comment-text {
+  padding: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  background: #EFE6F0; /* light purple */
+  width: 95%; /*TODO: find way to set width % relative to the parent */
+  border: 2px solid #CD9C4E;
+  border-radius: 5px; /* makes the border rounder */
+}
+
+.comment-form:hover {
+  border-color: red;
+}
+
+.comment-text:hover {
+  border-color: red;
+}
+
+/* changes the width of projects to 100% screen size when width of screen depending on sizes*/
+@media(max-width:1000px){
+	.project-div {
+		width: 48%;
+		float: left;
+	}
+
+@media(max-width:700px){
+	.project-div {
+		width:100%;
+		float:none;
+	}
+}
